@@ -23,6 +23,8 @@
 		25430AD924B113420077AEB7 /* ActionPlanModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25430AD824B113420077AEB7 /* ActionPlanModelData.swift */; };
 		25430ADB24B113CF0077AEB7 /* FmeaDocModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25430ADA24B113CF0077AEB7 /* FmeaDocModelData.swift */; };
 		25430ADD24B117900077AEB7 /* FmeaCollectionModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25430ADC24B117900077AEB7 /* FmeaCollectionModelData.swift */; };
+		25430ADF24B11FF20077AEB7 /* DelegateFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25430ADE24B11FF20077AEB7 /* DelegateFlowLayout.swift */; };
+		25430AE324B123420077AEB7 /* CalculationCellSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25430AE224B123420077AEB7 /* CalculationCellSize.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		25430AD824B113420077AEB7 /* ActionPlanModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionPlanModelData.swift; sourceTree = "<group>"; };
 		25430ADA24B113CF0077AEB7 /* FmeaDocModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FmeaDocModelData.swift; sourceTree = "<group>"; };
 		25430ADC24B117900077AEB7 /* FmeaCollectionModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FmeaCollectionModelData.swift; sourceTree = "<group>"; };
+		25430ADE24B11FF20077AEB7 /* DelegateFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateFlowLayout.swift; sourceTree = "<group>"; };
+		25430AE224B123420077AEB7 /* CalculationCellSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationCellSize.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +188,8 @@
 			isa = PBXGroup;
 			children = (
 				25430AD224B108150077AEB7 /* FmeaCollection.swift */,
+				25430AE224B123420077AEB7 /* CalculationCellSize.swift */,
+				25430ADE24B11FF20077AEB7 /* DelegateFlowLayout.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -354,8 +360,10 @@
 			files = (
 				25430ACF24B106A50077AEB7 /* ActionPlanTVCell.swift in Sources */,
 				25430AD724B1118E0077AEB7 /* ActionModelData.swift in Sources */,
+				25430AE324B123420077AEB7 /* CalculationCellSize.swift in Sources */,
 				25430A9D24B0D3670077AEB7 /* AppDelegate.swift in Sources */,
 				25430AD524B1082F0077AEB7 /* FmeaCollectionCell.swift in Sources */,
+				25430ADF24B11FF20077AEB7 /* DelegateFlowLayout.swift in Sources */,
 				25430ACD24B1066B0077AEB7 /* ActionPlanTVC.swift in Sources */,
 				25430ADD24B117900077AEB7 /* FmeaCollectionModelData.swift in Sources */,
 				25430ACB24B1060F0077AEB7 /* CreateEditAction.swift in Sources */,
