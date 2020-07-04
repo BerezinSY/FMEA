@@ -10,11 +10,11 @@
         <!--FMEA Collection-->
         <scene sceneID="yn7-Lp-ysH">
             <objects>
-                <collectionViewController id="fvl-g8-Oe0" sceneMemberID="viewController">
+                <collectionViewController id="fvl-g8-Oe0" customClass="FmeaCollection" customModule="FMEA" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Hcd-5W-mg5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xMJ-RA-p0a">
                             <size key="itemSize" width="373" height="128"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -22,7 +22,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="fmeaCollectionCell" id="sU8-cd-d86">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="fmeaCollectionCell" id="sU8-cd-d86" customClass="FmeaCollectionCell" customModule="FMEA" customModuleProvider="target">
                                 <rect key="frame" x="20" y="0.0" width="374" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Mgb-Uc-7Zs">
@@ -72,6 +72,7 @@
                                         <constraint firstAttribute="bottom" secondItem="kEg-hh-A8e" secondAttribute="bottom" constant="8" id="zOP-Ut-GWQ"/>
                                     </constraints>
                                 </collectionViewCellContentView>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <size key="customSize" width="374" height="94"/>
                             </collectionViewCell>
                         </cells>
@@ -83,7 +84,7 @@
                     <navigationItem key="navigationItem" title="FMEA Collection" largeTitleDisplayMode="always" id="sNf-O3-LI1">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="EpT-kA-vro">
                             <connections>
-                                <segue destination="Job-NN-3Dp" kind="presentation" identifier="" id="c0N-tx-bkR"/>
+                                <segue destination="Job-NN-3Dp" kind="presentation" identifier="fmeaCreationSegue" id="c0N-tx-bkR"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -95,7 +96,7 @@
         <!--New-->
         <scene sceneID="Bru-fE-sPM">
             <objects>
-                <tableViewController id="wMA-d2-iOy" sceneMemberID="viewController">
+                <tableViewController id="wMA-d2-iOy" customClass="FmeaEditCreationTVC" customModule="FMEA" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="b25-f6-63D">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -690,7 +691,7 @@
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="scX-Ve-Xj9"/>
                     </navigationItem>
                     <connections>
-                        <segue destination="acT-RD-Il6" kind="show" id="5nA-NT-Mi0"/>
+                        <segue destination="acT-RD-Il6" kind="show" identifier="goToActionPlanTable" id="5nA-NT-Mi0"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m9y-tw-1mv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -700,13 +701,13 @@
         <!--Action plan-->
         <scene sceneID="LAQ-Jh-4SW">
             <objects>
-                <tableViewController id="acT-RD-Il6" sceneMemberID="viewController">
+                <tableViewController id="acT-RD-Il6" customClass="ActionPlanTVC" customModule="FMEA" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="5mm-Pc-gSw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="actionCell" textLabel="oTh-y4-tl9" style="IBUITableViewCellStyleDefault" id="dOI-d1-7fD">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="actionCell" textLabel="oTh-y4-tl9" style="IBUITableViewCellStyleDefault" id="dOI-d1-7fD" customClass="ActionPlanTVCell" customModule="FMEA" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dOI-d1-7fD" id="Ksp-d7-emf">
@@ -747,7 +748,7 @@
         <!--New action-->
         <scene sceneID="ffo-8d-pB0">
             <objects>
-                <tableViewController id="aa9-bz-dGE" sceneMemberID="viewController">
+                <tableViewController id="aa9-bz-dGE" customClass="CreateEditAction" customModule="FMEA" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Msg-8p-5uF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1110,7 +1111,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="1Vr-gd-Inz"/>
+        <segue reference="QYS-Gn-aSu"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="photo" catalog="system" width="128" height="93"/>
