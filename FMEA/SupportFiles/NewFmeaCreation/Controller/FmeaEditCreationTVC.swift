@@ -16,7 +16,8 @@ class FmeaEditCreationTVC: UITableViewController {
     @IBOutlet weak var creationDateLabel: UILabel!
     @IBOutlet weak var creationDatePicker: UIDatePicker!
     @IBOutlet weak var modificationLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var defectNameLabel: UILabel!
+    @IBOutlet weak var potentialFailureLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var partNameLabel: UILabel!
     @IBOutlet weak var partNumberLabel: UILabel!

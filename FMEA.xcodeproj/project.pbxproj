@@ -19,6 +19,10 @@
 		25430AD124B107170077AEB7 /* FmeaEditCreationTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25430AD024B107170077AEB7 /* FmeaEditCreationTVC.swift */; };
 		25430AD324B108150077AEB7 /* FmeaCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25430AD224B108150077AEB7 /* FmeaCollection.swift */; };
 		25430AD524B1082F0077AEB7 /* FmeaCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25430AD424B1082F0077AEB7 /* FmeaCollectionCell.swift */; };
+		25430AD724B1118E0077AEB7 /* ActionModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25430AD624B1118E0077AEB7 /* ActionModelData.swift */; };
+		25430AD924B113420077AEB7 /* ActionPlanModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25430AD824B113420077AEB7 /* ActionPlanModelData.swift */; };
+		25430ADB24B113CF0077AEB7 /* FmeaDocModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25430ADA24B113CF0077AEB7 /* FmeaDocModelData.swift */; };
+		25430ADD24B117900077AEB7 /* FmeaCollectionModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25430ADC24B117900077AEB7 /* FmeaCollectionModelData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		25430AD024B107170077AEB7 /* FmeaEditCreationTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FmeaEditCreationTVC.swift; sourceTree = "<group>"; };
 		25430AD224B108150077AEB7 /* FmeaCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FmeaCollection.swift; sourceTree = "<group>"; };
 		25430AD424B1082F0077AEB7 /* FmeaCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FmeaCollectionCell.swift; sourceTree = "<group>"; };
+		25430AD624B1118E0077AEB7 /* ActionModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionModelData.swift; sourceTree = "<group>"; };
+		25430AD824B113420077AEB7 /* ActionPlanModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionPlanModelData.swift; sourceTree = "<group>"; };
+		25430ADA24B113CF0077AEB7 /* FmeaDocModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FmeaDocModelData.swift; sourceTree = "<group>"; };
+		25430ADC24B117900077AEB7 /* FmeaCollectionModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FmeaCollectionModelData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +199,7 @@
 		25430ABF24B104830077AEB7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				25430ADC24B117900077AEB7 /* FmeaCollectionModelData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -213,6 +222,7 @@
 		25430AC224B105060077AEB7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				25430ADA24B113CF0077AEB7 /* FmeaDocModelData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -236,6 +246,7 @@
 		25430AC524B105220077AEB7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				25430AD824B113420077AEB7 /* ActionPlanModelData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -258,6 +269,7 @@
 		25430AC824B1055D0077AEB7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				25430AD624B1118E0077AEB7 /* ActionModelData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -341,14 +353,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				25430ACF24B106A50077AEB7 /* ActionPlanTVCell.swift in Sources */,
+				25430AD724B1118E0077AEB7 /* ActionModelData.swift in Sources */,
 				25430A9D24B0D3670077AEB7 /* AppDelegate.swift in Sources */,
 				25430AD524B1082F0077AEB7 /* FmeaCollectionCell.swift in Sources */,
 				25430ACD24B1066B0077AEB7 /* ActionPlanTVC.swift in Sources */,
+				25430ADD24B117900077AEB7 /* FmeaCollectionModelData.swift in Sources */,
 				25430ACB24B1060F0077AEB7 /* CreateEditAction.swift in Sources */,
+				25430AD924B113420077AEB7 /* ActionPlanModelData.swift in Sources */,
 				25430AD324B108150077AEB7 /* FmeaCollection.swift in Sources */,
 				25430AD124B107170077AEB7 /* FmeaEditCreationTVC.swift in Sources */,
 				25430AA724B0D3680077AEB7 /* FMEA.xcdatamodeld in Sources */,
 				25430A9F24B0D3670077AEB7 /* SceneDelegate.swift in Sources */,
+				25430ADB24B113CF0077AEB7 /* FmeaDocModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
