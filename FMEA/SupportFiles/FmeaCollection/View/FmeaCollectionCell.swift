@@ -10,4 +10,9 @@ import UIKit
 
 class FmeaCollectionCell: UICollectionViewCell {
     
+    //MARK: Outlets from View
+    @IBOutlet weak var defectNameLabel: UILabel!
+    @IBOutlet weak var partNameLabel: UILabel!
+    @IBOutlet weak var partNumber: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
 }
