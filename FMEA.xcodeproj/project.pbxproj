@@ -25,6 +25,11 @@
 		25430ADD24B117900077AEB7 /* FmeaCollectionModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25430ADC24B117900077AEB7 /* FmeaCollectionModelData.swift */; };
 		25430ADF24B11FF20077AEB7 /* DelegateFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25430ADE24B11FF20077AEB7 /* DelegateFlowLayout.swift */; };
 		25430AE324B123420077AEB7 /* CalculationCellSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25430AE224B123420077AEB7 /* CalculationCellSize.swift */; };
+		25430AE824B139830077AEB7 /* PickerViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25430AE724B139830077AEB7 /* PickerViewDataSource.swift */; };
+		25430AEA24B139990077AEB7 /* PickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25430AE924B139990077AEB7 /* PickerViewDelegate.swift */; };
+		25430AEC24B13AFE0077AEB7 /* PickerViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25430AEB24B13AFE0077AEB7 /* PickerViewData.swift */; };
+		25430AEE24B141040077AEB7 /* TableViewRowStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25430AED24B141040077AEB7 /* TableViewRowStateManager.swift */; };
+		2552D6E924B1F07300AD5E15 /* Switcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2552D6E824B1F07300AD5E15 /* Switcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +53,11 @@
 		25430ADC24B117900077AEB7 /* FmeaCollectionModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FmeaCollectionModelData.swift; sourceTree = "<group>"; };
 		25430ADE24B11FF20077AEB7 /* DelegateFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateFlowLayout.swift; sourceTree = "<group>"; };
 		25430AE224B123420077AEB7 /* CalculationCellSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationCellSize.swift; sourceTree = "<group>"; };
+		25430AE724B139830077AEB7 /* PickerViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewDataSource.swift; sourceTree = "<group>"; };
+		25430AE924B139990077AEB7 /* PickerViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewDelegate.swift; sourceTree = "<group>"; };
+		25430AEB24B13AFE0077AEB7 /* PickerViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewData.swift; sourceTree = "<group>"; };
+		25430AED24B141040077AEB7 /* TableViewRowStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewRowStateManager.swift; sourceTree = "<group>"; };
+		2552D6E824B1F07300AD5E15 /* Switcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +224,9 @@
 			isa = PBXGroup;
 			children = (
 				25430AD024B107170077AEB7 /* FmeaEditCreationTVC.swift */,
+				25430AE724B139830077AEB7 /* PickerViewDataSource.swift */,
+				25430AE924B139990077AEB7 /* PickerViewDelegate.swift */,
+				25430AED24B141040077AEB7 /* TableViewRowStateManager.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -229,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				25430ADA24B113CF0077AEB7 /* FmeaDocModelData.swift */,
+				2552D6E824B1F07300AD5E15 /* Switcher.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -283,6 +297,7 @@
 		25430AC924B1058A0077AEB7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				25430AEB24B13AFE0077AEB7 /* PickerViewData.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -359,15 +374,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				25430ACF24B106A50077AEB7 /* ActionPlanTVCell.swift in Sources */,
+				2552D6E924B1F07300AD5E15 /* Switcher.swift in Sources */,
+				25430AEE24B141040077AEB7 /* TableViewRowStateManager.swift in Sources */,
 				25430AD724B1118E0077AEB7 /* ActionModelData.swift in Sources */,
 				25430AE324B123420077AEB7 /* CalculationCellSize.swift in Sources */,
 				25430A9D24B0D3670077AEB7 /* AppDelegate.swift in Sources */,
+				25430AEA24B139990077AEB7 /* PickerViewDelegate.swift in Sources */,
 				25430AD524B1082F0077AEB7 /* FmeaCollectionCell.swift in Sources */,
 				25430ADF24B11FF20077AEB7 /* DelegateFlowLayout.swift in Sources */,
 				25430ACD24B1066B0077AEB7 /* ActionPlanTVC.swift in Sources */,
 				25430ADD24B117900077AEB7 /* FmeaCollectionModelData.swift in Sources */,
 				25430ACB24B1060F0077AEB7 /* CreateEditAction.swift in Sources */,
+				25430AE824B139830077AEB7 /* PickerViewDataSource.swift in Sources */,
 				25430AD924B113420077AEB7 /* ActionPlanModelData.swift in Sources */,
+				25430AEC24B13AFE0077AEB7 /* PickerViewData.swift in Sources */,
 				25430AD324B108150077AEB7 /* FmeaCollection.swift in Sources */,
 				25430AD124B107170077AEB7 /* FmeaEditCreationTVC.swift in Sources */,
 				25430AA724B0D3680077AEB7 /* FMEA.xcdatamodeld in Sources */,

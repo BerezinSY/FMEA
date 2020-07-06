@@ -79,7 +79,7 @@
                                     <outlet property="defectNameLabel" destination="7bW-Nd-G9N" id="tnL-Az-eg5"/>
                                     <outlet property="imageView" destination="yD1-ws-xL5" id="W16-AP-Ogt"/>
                                     <outlet property="partNameLabel" destination="NoQ-uE-rno" id="4fW-Pt-Jto"/>
-                                    <outlet property="partNumber" destination="sFP-r2-JE8" id="SpK-7x-kZ4"/>
+                                    <outlet property="partNumberLabel" destination="sFP-r2-JE8" id="svu-6k-aWp"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -154,6 +154,10 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="200" id="AVw-Td-R1K"/>
                                                     </constraints>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="wMA-d2-iOy" id="UOu-TU-Ses"/>
+                                                        <outlet property="delegate" destination="wMA-d2-iOy" id="b3L-Wg-MBs"/>
+                                                    </connections>
                                                 </pickerView>
                                             </subviews>
                                             <constraints>
@@ -481,6 +485,10 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="200" id="6gm-lV-dKF"/>
                                                     </constraints>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="wMA-d2-iOy" id="Kqk-yn-qez"/>
+                                                        <outlet property="delegate" destination="wMA-d2-iOy" id="qk9-Yd-RJs"/>
+                                                    </connections>
                                                 </pickerView>
                                             </subviews>
                                             <constraints>
@@ -534,6 +542,10 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="200" id="JD9-Ym-6c7"/>
                                                     </constraints>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="wMA-d2-iOy" id="FIg-ux-Vev"/>
+                                                        <outlet property="delegate" destination="wMA-d2-iOy" id="KZW-HW-vOb"/>
+                                                    </connections>
                                                 </pickerView>
                                             </subviews>
                                             <constraints>
@@ -587,6 +599,10 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="200" id="Unj-Nw-PBh"/>
                                                     </constraints>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="wMA-d2-iOy" id="yql-5e-5gU"/>
+                                                        <outlet property="delegate" destination="wMA-d2-iOy" id="EmQ-Ub-ULd"/>
+                                                    </connections>
                                                 </pickerView>
                                             </subviews>
                                             <constraints>
@@ -605,13 +621,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gwj-ih-ebb">
-                                                    <rect key="frame" x="20" y="11" width="74.5" height="21.5"/>
+                                                    <rect key="frame" x="20" y="11" width="74.5" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pu1-A3-w9Z">
-                                                    <rect key="frame" x="352" y="11" width="42" height="21.5"/>
+                                                    <rect key="frame" x="352" y="11" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -640,6 +656,10 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="200" id="8hp-Ox-WBK"/>
                                                     </constraints>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="wMA-d2-iOy" id="rOL-pA-fIa"/>
+                                                        <outlet property="delegate" destination="wMA-d2-iOy" id="F04-zu-yEX"/>
+                                                    </connections>
                                                 </pickerView>
                                             </subviews>
                                             <constraints>
@@ -658,13 +678,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Risk Priority Number (RPN)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ze4-td-IXX">
-                                                    <rect key="frame" x="20" y="11" width="207" height="21.5"/>
+                                                    <rect key="frame" x="20" y="11" width="207" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAa-0f-lcs">
-                                                    <rect key="frame" x="352" y="11" width="42" height="21.5"/>
+                                                    <rect key="frame" x="352" y="11" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -693,13 +713,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prevent &amp; Control Actions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5l-W3-hZH">
-                                                    <rect key="frame" x="20" y="11" width="197" height="21.5"/>
+                                                    <rect key="frame" x="20" y="11" width="197" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpo-wv-Mdg">
-                                                    <rect key="frame" x="321" y="11" width="42" height="21.5"/>
+                                                    <rect key="frame" x="333" y="11" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
