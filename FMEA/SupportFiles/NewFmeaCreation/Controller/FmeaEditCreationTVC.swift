@@ -10,7 +10,7 @@ import UIKit
 
 class FmeaEditCreationTVC: UITableViewController {
     
-    let pickerViewData = PickerViewData()
+    var pickerViewData = PickerViewData()
     let tableViewRowStateManager = TableViewRowStateManager()
     var switcher = Switcher()
     
@@ -42,6 +42,7 @@ class FmeaEditCreationTVC: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        pickerViewData.loadDataToPickerView()
     }
     
     private func updateTableView() {

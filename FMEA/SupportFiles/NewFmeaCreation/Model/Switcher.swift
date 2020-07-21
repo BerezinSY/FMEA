@@ -245,7 +245,6 @@ struct State6: State {
     }
 }
 
-
 struct Switcher {
     
     private var state: State?

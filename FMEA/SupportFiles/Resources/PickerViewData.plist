@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FmeaType</key>
+	<array>
+		<string>DFMEA</string>
+		<string>PFMEA</string>
+	</array>
+	<key>Affect</key>
+	<array>
+		<string>Safety</string>
+		<string>Assembly</string>
+		<string>Function</string>
+		<string>Appearance</string>
+	</array>
+	<key>SeverityIndexCriteria</key>
+	<array>
+		<string>Affect to safety without warning</string>
+		<string>Affect to safety with warning</string>
+		<string>Loss primary function</string>
+		<string>Degradation primary function</string>
+		<string>Loss secondary function</string>
+		<string>Degradation secondary function</string>
+		<string>NC noticed by most customers</string>
+		<string>NC noticed by many customers</string>
+		<string>NC noticed by legible customers</string>
+		<string>No affect</string>
+	</array>
+	<key>SeverityIndexValue</key>
+	<dict>
+		<key>Affect to safety without warning</key>
+		<integer>10</integer>
+		<key>Affect to safety with warning</key>
+		<integer>9</integer>
+		<key>Loss primary function</key>
+		<integer>8</integer>
+		<key>Degradation primary function</key>
+		<integer>7</integer>
+		<key>Loss secondary function</key>
+		<integer>6</integer>
+		<key>Degradation secondary function</key>
+		<integer>5</integer>
+		<key>NC noticed by most customers</key>
+		<integer>4</integer>
+		<key>NC noticed by many customers</key>
+		<integer>3</integer>
+		<key>NC noticed by legible customers</key>
+		<integer>2</integer>
+		<key>No affect</key>
+		<integer>1</integer>
+	</dict>
+	<key>OccurrenceIndexCritetia</key>
+	<array>
+		<string>More or equal 1 in 10</string>
+		<string>Equal 1 in 20</string>
+		<string>Equal 1 in 50</string>
+		<string>Equal 1 in 100</string>
+		<string>Equal 1 in 500</string>
+		<string>Equal 1 in 2000</string>
+		<string>Equal 1 in 10000</string>
+		<string>Equal 1 in 100000</string>
+		<string>Equal 1 in 1000000</string>
+		<string>Poka Yoke in process</string>
+	</array>
+	<key>OccurrenceIndexValue</key>
+	<dict>
+		<key>More or equal 1 in 10</key>
+		<integer>10</integer>
+		<key>Equal 1 in 20</key>
+		<integer>9</integer>
+		<key>Equal 1 in 50</key>
+		<integer>8</integer>
+		<key>Equal 1 in 100</key>
+		<integer>7</integer>
+		<key>Equal 1 in 500</key>
+		<integer>6</integer>
+		<key>Equal 1 in 2000</key>
+		<integer>5</integer>
+		<key>Equal 1 in 10000</key>
+		<integer>4</integer>
+		<key>Equal 1 in 100000</key>
+		<integer>3</integer>
+		<key>Equal 1 in 1000000</key>
+		<integer>2</integer>
+		<key>Poka Yoke in process</key>
+		<integer>1</integer>
+	</dict>
+	<key>DetectionIndexCriteria</key>
+	<array>
+		<string>None</string>
+		<string>Sampled control</string>
+		<string>Accept based on no defective</string>
+		<string>100 % visual control</string>
+		<string>100 % go/no-go</string>
+		<string>SPC offline</string>
+		<string>SPC online</string>
+		<string>SPC with Cpk&gt;1,33</string>
+		<string>Sampled automatic</string>
+		<string>100% automatic</string>
+	</array>
+	<key>DetectionIndexValue</key>
+	<dict>
+		<key>None</key>
+		<integer>10</integer>
+		<key>Sampled control</key>
+		<integer>9</integer>
+		<key>Accept based on no defective</key>
+		<integer>8</integer>
+		<key>100 % visual control</key>
+		<integer>7</integer>
+		<key>100 % go/no-go</key>
+		<integer>6</integer>
+		<key>SPC offline</key>
+		<integer>5</integer>
+		<key>SPC online</key>
+		<integer>4</integer>
+		<key>SPC with Cpk&gt;1,33</key>
+		<integer>3</integer>
+		<key>Sampled automatic</key>
+		<integer>2</integer>
+		<key>100% automatic</key>
+		<integer>1</integer>
+	</dict>
+</dict>
+</plist>
