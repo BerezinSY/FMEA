@@ -11,7 +11,7 @@ import UIKit
 class FmeaEditCreationTVC: UITableViewController {
     
     var pickerViewData = PickerViewData()
-    let tableViewRowStateManager = TableViewRowStateManager()
+    let pickerViewSelector = PickerViewSelector()
     var switcher = Switcher()
     
     
