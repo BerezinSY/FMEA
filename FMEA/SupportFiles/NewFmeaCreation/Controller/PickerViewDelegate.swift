@@ -33,25 +33,25 @@ extension FmeaEditCreationTVC: UIPickerViewDelegate {
         
         switch pickerView {
         case fmeaTypePickerView:
-            pickerViewSelector.selectValueFromPickerView(arrayOfElements: pickerViewData.fmeaTypeArray, selectedRow: row) { (selectedElement) in
+            pickerViewDataSelector.selectDataFromPickerView(arrayOfElements: pickerViewData.fmeaTypeArray, selectedRow: row) { (selectedElement) in
                 fmeaTypeLabel.text = selectedElement
             }
         case affectPickerView:
-            pickerViewSelector.selectValueFromPickerView(arrayOfElements: pickerViewData.affect, selectedRow: row) { (selectedElement) in
+            pickerViewDataSelector.selectDataFromPickerView(arrayOfElements: pickerViewData.affect, selectedRow: row) { (selectedElement) in
                 affectLabel.text = selectedElement
             }
         case severityPickerView:
-            pickerViewSelector.selectValueFromPickerView(arrayOfElements: pickerViewData.severityIndexCriteria, selectedRow: row) { (selectedElement) in
+            pickerViewDataSelector.selectDataFromPickerView(arrayOfElements: pickerViewData.severityIndexCriteria, selectedRow: row) { (selectedElement) in
                 guard let rating = pickerViewData.severityIndexValue[selectedElement] else { return }
                 severityLabel.text = String(rating)
             }
         case occurrencePickerView:
-            pickerViewSelector.selectValueFromPickerView(arrayOfElements: pickerViewData.occurrenceIndexCritetia, selectedRow: row) { (selectedElement) in
+            pickerViewDataSelector.selectDataFromPickerView(arrayOfElements: pickerViewData.occurrenceIndexCritetia, selectedRow: row) { (selectedElement) in
                 guard let rating = pickerViewData.occurrenceIndexValue[selectedElement] else { return }
                 occurrenceLabel.text = String(rating)
             }
         case detectionPickerView:
-            pickerViewSelector.selectValueFromPickerView(arrayOfElements: pickerViewData.detectionIndexCriteria, selectedRow: row) { (selectedElement) in
+            pickerViewDataSelector.selectDataFromPickerView(arrayOfElements: pickerViewData.detectionIndexCriteria, selectedRow: row) { (selectedElement) in
                 guard let rating = pickerViewData.detectionIndexValue[selectedElement] else { return }
                 detectionLabel.text = String(rating)
             }
