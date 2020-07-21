@@ -12,6 +12,8 @@ class FmeaEditCreationTVC: UITableViewController {
     
     let pickerViewData = PickerViewData()
     let tableViewRowStateManager = TableViewRowStateManager()
+    var switcher = Switcher()
+    
     
     //MARK: Outlets from View
     @IBOutlet weak var fmeaTypeLabel: UILabel!
@@ -36,9 +38,7 @@ class FmeaEditCreationTVC: UITableViewController {
     @IBOutlet weak var rpnLabel: UILabel!
     @IBOutlet weak var preventControlActionLabel: UILabel!
     
-    // MARK: Initial states for pickerViewRows
-    var switcher = Switcher()
-    var heightForRow: CGFloat!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,62 +51,63 @@ class FmeaEditCreationTVC: UITableViewController {
     
     // MARK: TableView Delegate
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        switch indexPath{
+        
+        switch indexPath {
         case [0, 0]:
-            switcher.setState(forState: FmeaTypeRowState())
-            switcher.makeSwitch()
+            switcher.set(state: State1())
+            switcher.switchState()
             updateTableView()
         case [0, 2]:
-            switcher.setState(forState: DateRowState())
-            switcher.makeSwitch()
+            switcher.set(state: State2())
+            switcher.switchState()
             updateTableView()
         case [3, 0]:
-            switcher.setState(forState: AffectRowState())
-            switcher.makeSwitch()
+            switcher.set(state: State3())
+            switcher.switchState()
             updateTableView()
         case [3, 2]:
-            switcher.setState(forState: SeverityRowState())
-            switcher.makeSwitch()
+            switcher.set(state: State4())
+            switcher.switchState()
             updateTableView()
         case [3, 4]:
-            switcher.setState(forState: OccurrenceRowState())
-            switcher.makeSwitch()
+            switcher.set(state: State5())
+            switcher.switchState()
             updateTableView()
         case [3, 6]:
-            switcher.setState(forState: DetectionRowState())
-            switcher.makeSwitch()
+            switcher.set(state: State6())
+            switcher.switchState()
             updateTableView()
         default:
-            switcher.setState(forState: InitialState())
-            switcher.makeSwitch()
+            switcher.set(state: Reset())
             updateTableView()
         }
+        
         tableView.deselectRow(at: indexPath, animated: true)
     }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        if indexPath == [0, 1] && fmeaTypeRowState {
+        if indexPath == [0, 1] && switcher.state1() {
             return 0
         }
         
-        if indexPath == [0, 3] && dateRowState {
+        if indexPath == [0, 3] && switcher.state2() {
             return 0
         }
         
-        if indexPath == [3, 1] && affectRowState {
+        if indexPath == [3, 1] && switcher.state3() {
             return 0
         }
         
-        if indexPath == [3, 3] && severityRowState {
+        if indexPath == [3, 3] && switcher.state4() {
             return 0
         }
         
-        if indexPath == [3, 5] && occurrenceRowState {
+        if indexPath == [3, 5] && switcher.state5() {
             return 0
         }
         
-        if indexPath == [3, 7] && detectionRowState {
+        if indexPath == [3, 7] && switcher.state6() {
             return 0
         } else {
             return super.tableView(tableView, heightForRowAt: indexPath)
