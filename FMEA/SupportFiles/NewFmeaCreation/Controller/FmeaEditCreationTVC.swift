@@ -86,12 +86,12 @@ class FmeaEditCreationTVC: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
         switch indexPath {
-        case [0, 1] where switcher.state1() == true: return 0
-        case [0, 3] where switcher.state2() == true: return 0
-        case [3, 1] where switcher.state3() == true: return 0
-        case [3, 3] where switcher.state4() == true: return 0
-        case [3, 5] where switcher.state5() == true: return 0
-        case [3, 7] where switcher.state6() == true: return 0
+        case [0, 1] where switcher.state1(): return 0
+        case [0, 3] where switcher.state2(): return 0
+        case [3, 1] where switcher.state3(): return 0
+        case [3, 3] where switcher.state4(): return 0
+        case [3, 5] where switcher.state5(): return 0
+        case [3, 7] where switcher.state6(): return 0
         
         default: return super.tableView(tableView, heightForRowAt: indexPath)
         }
