@@ -39,5 +39,4 @@ struct PickerViewData {
         self.detectionIndexCriteria = detectionIndexCriteria
         self.detectionIndexValue = detectionIndexValue
     }
-    
 }

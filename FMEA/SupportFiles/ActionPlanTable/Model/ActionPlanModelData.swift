@@ -9,5 +9,5 @@
 import Foundation
 
 struct ActionPlanModelData {
-    let actionName: ActionModelData
+    let actionName: String?
 }

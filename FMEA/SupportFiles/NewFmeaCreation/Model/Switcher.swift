@@ -18,232 +18,97 @@ protocol State {
     func state6() -> Bool
 }
 
+
+
 struct Reset: State {
-    
     mutating func switchState(_ state: Bool) {}
-    
-    func state1() -> Bool {
-        return true
-    }
-    
-    func state2() -> Bool {
-        return true
-    }
-    
-    func state3() -> Bool {
-        return true
-    }
-    
-    func state4() -> Bool {
-        return true
-    }
-    
-    func state5() -> Bool {
-        return true
-    }
-    
-    func state6() -> Bool {
-        return true
-    }
+    func state1() -> Bool { return true }
+    func state2() -> Bool { return true }
+    func state3() -> Bool { return true }
+    func state4() -> Bool { return true }
+    func state5() -> Bool { return true }
+    func state6() -> Bool { return true }
 }
+
+
 
 struct State1: State {
-    
     private var state = true
-    
-    mutating func switchState(_ state: Bool) {
-        self.state = state
-    }
-    
-    func state1() -> Bool {
-        return state
-    }
-    
-    func state2() -> Bool {
-        return true
-    }
-    
-    func state3() -> Bool {
-        return true
-    }
-    
-    func state4() -> Bool {
-        return true
-    }
-    
-    func state5() -> Bool {
-        return true
-    }
-    
-    func state6() -> Bool {
-        return true
-    }
+    mutating func switchState(_ state: Bool) { self.state = state }
+    func state1() -> Bool { return state }
+    func state2() -> Bool { return true }
+    func state3() -> Bool { return true }
+    func state4() -> Bool { return true }
+    func state5() -> Bool { return true }
+    func state6() -> Bool { return true }
 }
+
+
 
 struct State2: State {
-    
     private var state = true
-    
-    mutating func switchState(_ state: Bool) {
-        self.state = state
-    }
-    
-    func state1() -> Bool {
-        return true
-    }
-    
-    func state2() -> Bool {
-        return state
-    }
-    
-    func state3() -> Bool {
-        return true
-    }
-    
-    func state4() -> Bool {
-        return true
-    }
-    
-    func state5() -> Bool {
-        return true
-    }
-    
-    func state6() -> Bool {
-        return true
-    }
+    mutating func switchState(_ state: Bool) { self.state = state }
+    func state1() -> Bool { return true }
+    func state2() -> Bool { return state }
+    func state3() -> Bool { return true }
+    func state4() -> Bool { return true }
+    func state5() -> Bool { return true }
+    func state6() -> Bool { return true }
 }
+
+
 
 struct State3: State {
-    
     private var state = true
-    
-    mutating func switchState(_ state: Bool) {
-        self.state = state
-    }
-    
-    func state1() -> Bool {
-        return true
-    }
-    
-    func state2() -> Bool {
-        return true
-    }
-    
-    func state3() -> Bool {
-        return state
-    }
-    
-    func state4() -> Bool {
-        return true
-    }
-    
-    func state5() -> Bool {
-        return true
-    }
-    
-    func state6() -> Bool {
-        return true
-    }
+    mutating func switchState(_ state: Bool) { self.state = state }
+    func state1() -> Bool { return true }
+    func state2() -> Bool { return true }
+    func state3() -> Bool { return state }
+    func state4() -> Bool { return true }
+    func state5() -> Bool { return true }
+    func state6() -> Bool { return true }
 }
+
+
 
 struct State4: State {
-    
     private var state = true
-    
-    mutating func switchState(_ state: Bool) {
-        self.state = state
-    }
-    
-    func state1() -> Bool {
-        return true
-    }
-    
-    func state2() -> Bool {
-        return true
-    }
-    
-    func state3() -> Bool {
-        return true
-    }
-    
-    func state4() -> Bool {
-        return state
-    }
-    
-    func state5() -> Bool {
-        return true
-    }
-    
-    func state6() -> Bool {
-        return true
-    }
+    mutating func switchState(_ state: Bool) { self.state = state }
+    func state1() -> Bool { return true }
+    func state2() -> Bool { return true }
+    func state3() -> Bool { return true }
+    func state4() -> Bool { return state }
+    func state5() -> Bool { return true }
+    func state6() -> Bool { return true }
 }
+
+
 
 struct State5: State {
-    
     private var state = true
-    
-    mutating func switchState(_ state: Bool) {
-        self.state = state
-    }
-    
-    func state1() -> Bool {
-        return true
-    }
-    
-    func state2() -> Bool {
-        return true
-    }
-    
-    func state3() -> Bool {
-        return true
-    }
-    
-    func state4() -> Bool {
-        return true
-    }
-    
-    func state5() -> Bool {
-        return state
-    }
-    
-    func state6() -> Bool {
-        return true
-    }
+    mutating func switchState(_ state: Bool) { self.state = state }
+    func state1() -> Bool { return true }
+    func state2() -> Bool { return true }
+    func state3() -> Bool { return true }
+    func state4() -> Bool { return true }
+    func state5() -> Bool { return state }
+    func state6() -> Bool { return true }
 }
 
+
+
 struct State6: State {
-    
     private var state = true
-    
-    mutating func switchState(_ state: Bool) {
-        self.state = state
-    }
-    
-    func state1() -> Bool {
-        return true
-    }
-    
-    func state2() -> Bool {
-        return true
-    }
-    
-    func state3() -> Bool {
-        return true
-    }
-    
-    func state4() -> Bool {
-        return true
-    }
-    
-    func state5() -> Bool {
-        return true
-    }
-    
-    func state6() -> Bool {
-        return state
-    }
+    mutating func switchState(_ state: Bool) { self.state = state }
+    func state1() -> Bool { return true }
+    func state2() -> Bool { return true }
+    func state3() -> Bool { return true }
+    func state4() -> Bool { return true }
+    func state5() -> Bool { return true }
+    func state6() -> Bool { return state }
 }
+
+
 
 struct Switcher {
     
@@ -316,26 +181,26 @@ struct Switcher {
     }
     
     func state1() -> Bool {
-        return state?.state1() ?? true
+        state?.state1() ?? true
     }
     
     func state2() -> Bool {
-        return state?.state2() ?? true
+        state?.state2() ?? true
     }
     
     func state3() -> Bool {
-        return state?.state3() ?? true
+        state?.state3() ?? true
     }
     
     func state4() -> Bool {
-        return state?.state4() ?? true
+        state?.state4() ?? true
     }
     
     func state5() -> Bool {
-        return state?.state5() ?? true
+        state?.state5() ?? true
     }
     
     func state6() -> Bool {
-        return state?.state6() ?? true
+        state?.state6() ?? true
     }
 }

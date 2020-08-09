@@ -12,7 +12,7 @@ class FmeaEditCreationTVC: UITableViewController {
     
     var pickerViewData = PickerViewData()
     let pickerViewDataSelector = PickerViewDataSelector()
-    var switcher = Switcher()
+    var tableAppearanceManager = TableAppearanceManager()
     
     //MARK: Outlets from View
     @IBOutlet weak var fmeaTypeLabel: UILabel!
@@ -47,53 +47,13 @@ class FmeaEditCreationTVC: UITableViewController {
         tableView.endUpdates()
     }
     
-    // MARK: TableView Delegate
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        switch indexPath {
-        case [0, 0]:
-            switcher.set(state: State1())
-            switcher.switchState()
-            updateTableView()
-        case [0, 2]:
-            switcher.set(state: State2())
-            switcher.switchState()
-            updateTableView()
-        case [3, 0]:
-            switcher.set(state: State3())
-            switcher.switchState()
-            updateTableView()
-        case [3, 2]:
-            switcher.set(state: State4())
-            switcher.switchState()
-            updateTableView()
-        case [3, 4]:
-            switcher.set(state: State5())
-            switcher.switchState()
-            updateTableView()
-        case [3, 6]:
-            switcher.set(state: State6())
-            switcher.switchState()
-            updateTableView()
-        default:
-            switcher.set(state: Reset())
-            updateTableView()
-        }
-        
+        tableAppearanceManager.switchState(forIndexPath: indexPath)
+        updateTableView()
         tableView.deselectRow(at: indexPath, animated: true)
     }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        
-        switch indexPath {
-        case [0, 1] where switcher.state1(): return 0
-        case [0, 3] where switcher.state2(): return 0
-        case [3, 1] where switcher.state3(): return 0
-        case [3, 3] where switcher.state4(): return 0
-        case [3, 5] where switcher.state5(): return 0
-        case [3, 7] where switcher.state6(): return 0
-        
-        default: return super.tableView(tableView, heightForRowAt: indexPath)
-        }
+        CGFloat(tableAppearanceManager.getstate(forIndexPath: indexPath, defaultValue: Int(super.tableView(tableView, heightForRowAt: indexPath))))
     }
 }

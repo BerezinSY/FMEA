@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		252AB08924C72B92000ADBB5 /* PickerViewData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 252AB08824C72B92000ADBB5 /* PickerViewData.plist */; };
 		252AB08B24C73C5E000ADBB5 /* PickerViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252AB08A24C73C5E000ADBB5 /* PickerViewData.swift */; };
+		252BD8E124E03E6400A44F4A /* TableAppearanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252BD8E024E03E6400A44F4A /* TableAppearanceManager.swift */; };
 		25430A9D24B0D3670077AEB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25430A9C24B0D3670077AEB7 /* AppDelegate.swift */; };
 		25430A9F24B0D3670077AEB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25430A9E24B0D3670077AEB7 /* SceneDelegate.swift */; };
 		25430AA424B0D3670077AEB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25430AA224B0D3670077AEB7 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* Begin PBXFileReference section */
 		252AB08824C72B92000ADBB5 /* PickerViewData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PickerViewData.plist; sourceTree = "<group>"; };
 		252AB08A24C73C5E000ADBB5 /* PickerViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewData.swift; sourceTree = "<group>"; };
+		252BD8E024E03E6400A44F4A /* TableAppearanceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableAppearanceManager.swift; sourceTree = "<group>"; };
 		25430A9924B0D3670077AEB7 /* FMEA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FMEA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25430A9C24B0D3670077AEB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25430A9E24B0D3670077AEB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 			children = (
 				25430ADA24B113CF0077AEB7 /* FmeaDocModelData.swift */,
 				25944ECC24B492E600651F58 /* Switcher.swift */,
+				252BD8E024E03E6400A44F4A /* TableAppearanceManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				25430AE324B123420077AEB7 /* CalculationCellSize.swift in Sources */,
 				252AB08B24C73C5E000ADBB5 /* PickerViewData.swift in Sources */,
 				25430A9D24B0D3670077AEB7 /* AppDelegate.swift in Sources */,
+				252BD8E124E03E6400A44F4A /* TableAppearanceManager.swift in Sources */,
 				25430AEA24B139990077AEB7 /* PickerViewDelegate.swift in Sources */,
 				25430AD524B1082F0077AEB7 /* FmeaCollectionCell.swift in Sources */,
 				25430ADF24B11FF20077AEB7 /* DelegateFlowLayout.swift in Sources */,
