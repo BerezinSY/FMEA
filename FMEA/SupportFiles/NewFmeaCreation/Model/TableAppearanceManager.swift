@@ -10,7 +10,7 @@ import Foundation
 
 struct TableAppearanceManager {
     
-    var switcher = Switcher()
+    private var switcher = Switcher()
     
     mutating func switchState(forIndexPath indexPath: IndexPath) {
         

@@ -14,18 +14,12 @@ extension FmeaEditCreationTVC: UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
         switch pickerView {
-        case fmeaTypePickerView:
-            return pickerViewData.fmeaTypeArray[row]
-        case affectPickerView:
-            return pickerViewData.affect[row]
-        case severityPickerView:
-            return pickerViewData.severityIndexCriteria[row]
-        case occurrencePickerView:
-            return pickerViewData.occurrenceIndexCritetia[row]
-        case detectionPickerView:
-            return pickerViewData.detectionIndexCriteria[row]
-        default:
-            return nil
+        case fmeaTypePickerView:   return pickerViewData.fmeaTypeArray[row]
+        case affectPickerView:     return pickerViewData.affect[row]
+        case severityPickerView:   return pickerViewData.severityIndexCriteria[row]
+        case occurrencePickerView: return pickerViewData.occurrenceIndexCritetia[row]
+        case detectionPickerView:  return pickerViewData.detectionIndexCriteria[row]
+        default: return nil
         }
     }
     
@@ -55,8 +49,7 @@ extension FmeaEditCreationTVC: UIPickerViewDelegate {
                 guard let rating = pickerViewData.detectionIndexValue[selectedElement] else { return }
                 detectionLabel.text = String(rating)
             }
-        default:
-            print("default")
+        default: print("default")
         }
     }
 }

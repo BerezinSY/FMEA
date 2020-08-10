@@ -39,6 +39,8 @@ class FmeaCollection: UICollectionViewController {
         return cell
     }
     
+    @IBAction func unwindToCancel(for segue: UIStoryboardSegue) {}
+    
     @IBAction func unwindToFmeaCollectionScreen(for segue: UIStoryboardSegue) {
         
     }

@@ -10,11 +10,11 @@ import Foundation
 
 struct ActionModelData {
     
-    let actionName: String?
-    let imageView: Data?
-    let applicationDate: Date?
-    let severityRating: Int?
-    let occurrenceRating: Int?
-    let detectionRating: Int?
-    let rpn: Int?
+    var actionName: String?
+    var imageView: Data?
+    var applicationDate: Date?
+    var severityRating: Int?
+    var occurrenceRating: Int?
+    var detectionRating: Int?
+    var rpn: Int?
 }

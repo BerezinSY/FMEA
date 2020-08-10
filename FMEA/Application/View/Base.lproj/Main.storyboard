@@ -735,6 +735,9 @@
                                                 <constraint firstItem="R5l-W3-hZH" firstAttribute="top" secondItem="6Iy-PV-pB0" secondAttribute="top" constant="11" id="rOs-Fo-cO7"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="CPX-jE-zZq" kind="presentation" identifier="actionPlan" id="bhX-eY-zNk"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -745,7 +748,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="New" id="42g-jI-Gpb">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="H2d-8K-jRR"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="H2d-8K-jRR">
+                            <connections>
+                                <segue destination="Yn0-7Y-3I7" kind="unwind" unwindAction="unwindToCancelFor:" id="J5M-VP-W8O"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="scX-Ve-Xj9">
                             <connections>
                                 <segue destination="Yn0-7Y-3I7" kind="unwind" unwindAction="unwindToFmeaCollectionScreenFor:" id="6kC-iY-OMH"/>
@@ -774,7 +781,6 @@
                         <outlet property="severityLabel" destination="gav-Ma-ybh" id="oZ6-fS-htg"/>
                         <outlet property="severityPickerView" destination="yKV-rm-X6e" id="G1D-5N-Nyb"/>
                         <outlet property="technologyLabel" destination="EHZ-Vp-qdo" id="SO0-9W-Leu"/>
-                        <segue destination="acT-RD-Il6" kind="show" identifier="goToActionPlanTable" id="5nA-NT-Mi0"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m9y-tw-1mv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -828,7 +834,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XpW-Bt-9Ro" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2163.768115942029" y="-9.375"/>
+            <point key="canvasLocation" x="2897" y="-9"/>
         </scene>
         <!--New action-->
         <scene sceneID="ffo-8d-pB0">
@@ -1169,7 +1175,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t6f-3F-OIw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2885.507246376812" y="-9.375"/>
+            <point key="canvasLocation" x="3638" y="-9"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NQP-3I-TxE">
@@ -1206,6 +1212,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b7o-PY-Oou" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="732" y="-9"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vip-H6-Ajz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CPX-jE-zZq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="zmX-HF-yNL"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UPZ-7N-UZO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="acT-RD-Il6" kind="relationship" relationship="rootViewController" id="H4S-t4-wzj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fr6-CP-tWR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2163.768115942029" y="-9.375"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

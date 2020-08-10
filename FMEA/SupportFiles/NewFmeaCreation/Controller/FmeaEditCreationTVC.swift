@@ -56,4 +56,9 @@ class FmeaEditCreationTVC: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         CGFloat(tableAppearanceManager.getstate(forIndexPath: indexPath, defaultValue: Int(super.tableView(tableView, heightForRowAt: indexPath))))
     }
+    
+    func loadDataFromView(in sample: FmeaDocModelData) -> FmeaDocModelData {
+        let sample = FmeaDocModelData(fmeaType: fmeaTypeLabel.text, creationDate: creationDateLabel.text, modificationDate: modificationLabel.text, defectName: defectNameLabel.text, potentialFailure: potentialFailureLabel.text, imageView: nil, partName: partNameLabel.text, partNumber: partNumberLabel.text, technologyName: technologyLabel.text, affect: affectLabel.text, severityRating: Int(severityLabel.text ?? ""), occurrenceRating: Int(occurrenceLabel.text ?? ""), detectionRating: Int(detectionLabel.text ?? ""), rpn: Int(rpnLabel.text ?? ""), preventionControlAction: nil)
+        return sample
+    }
 }

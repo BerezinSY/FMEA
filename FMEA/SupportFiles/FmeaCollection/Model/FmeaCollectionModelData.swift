@@ -9,8 +9,8 @@
 import Foundation
 
 struct FmeaCollectionModelData {
-    let defectName: FmeaDocModelData
-    let partName: String
-    let partNumber: String
-    let imageView: Data
+    var defectName: FmeaDocModelData
+    var partName: String
+    var partNumber: String
+    var imageView: Data
 }
