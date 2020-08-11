@@ -6,7 +6,6 @@
 //  Copyright © 2020 BEREZIN Stanislav. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 extension FmeaEditCreationTVC: UIPickerViewDelegate {

@@ -47,6 +47,7 @@ class FmeaEditCreationTVC: UITableViewController {
         tableView.endUpdates()
     }
     
+    // MARK: TableView Delegate
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableAppearanceManager.switchState(forIndexPath: indexPath, actionSheet: showActionSheet)
         updateTableView()
@@ -54,6 +55,7 @@ class FmeaEditCreationTVC: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        CGFloat(tableAppearanceManager.getstate(forIndexPath: indexPath, defaultValue: Int(super.tableView(tableView, heightForRowAt: indexPath))))
+        let defaultHeight = super.tableView(tableView, heightForRowAt: indexPath)
+        return CGFloat(tableAppearanceManager.getstate(forIndexPath: indexPath, defaultValue: Int(defaultHeight)))
     }
 }

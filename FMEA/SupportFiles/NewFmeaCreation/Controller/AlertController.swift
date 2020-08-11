@@ -13,11 +13,11 @@ extension FmeaEditCreationTVC {
     func showActionSheet() {
         let actionSheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         let camera = UIAlertAction(title: "Camera", style: .default) { _ in
-            // TODO where camera is choosen
+            self.chooseImageSource(in: .camera)
         }
         
         let photo = UIAlertAction(title: "Gallery", style: .default) { _ in
-            // TODO where photo is choosen
+            self.chooseImageSource(in: .photoLibrary)
         }
         
         let cancel = UIAlertAction(title: "Cancel", style: .cancel)
