@@ -12,7 +12,7 @@ struct TableAppearanceManager {
     
     private var switcher = Switcher()
     
-    mutating func switchState(forIndexPath indexPath: IndexPath) {
+    mutating func switchState(forIndexPath indexPath: IndexPath, actionSheet: () -> ()) {
         
         switch indexPath {
         case [0, 0]:
@@ -21,6 +21,9 @@ struct TableAppearanceManager {
         case [0, 2]:
             switcher.set(state: State2())
             switcher.switchState()
+        case [1, 2]:
+            switcher.set(state: Reset())
+            actionSheet()
         case [3, 0]:
             switcher.set(state: State3())
             switcher.switchState()

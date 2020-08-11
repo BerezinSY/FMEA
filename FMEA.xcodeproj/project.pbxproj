@@ -32,6 +32,7 @@
 		25430AEA24B139990077AEB7 /* PickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25430AE924B139990077AEB7 /* PickerViewDelegate.swift */; };
 		25430AEE24B141040077AEB7 /* PickerViewDataSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25430AED24B141040077AEB7 /* PickerViewDataSelector.swift */; };
 		25944ECD24B492E600651F58 /* Switcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25944ECC24B492E600651F58 /* Switcher.swift */; };
+		25DEDCC824E27B3600C93564 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DEDCC724E27B3600C93564 /* AlertController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		25430AE924B139990077AEB7 /* PickerViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewDelegate.swift; sourceTree = "<group>"; };
 		25430AED24B141040077AEB7 /* PickerViewDataSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewDataSelector.swift; sourceTree = "<group>"; };
 		25944ECC24B492E600651F58 /* Switcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switcher.swift; sourceTree = "<group>"; };
+		25DEDCC724E27B3600C93564 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +232,7 @@
 				25430AD024B107170077AEB7 /* FmeaEditCreationTVC.swift */,
 				25430AE724B139830077AEB7 /* PickerViewDataSource.swift */,
 				25430AE924B139990077AEB7 /* PickerViewDelegate.swift */,
+				25DEDCC724E27B3600C93564 /* AlertController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -388,6 +391,7 @@
 				25430A9D24B0D3670077AEB7 /* AppDelegate.swift in Sources */,
 				252BD8E124E03E6400A44F4A /* TableAppearanceManager.swift in Sources */,
 				25430AEA24B139990077AEB7 /* PickerViewDelegate.swift in Sources */,
+				25DEDCC824E27B3600C93564 /* AlertController.swift in Sources */,
 				25430AD524B1082F0077AEB7 /* FmeaCollectionCell.swift in Sources */,
 				25430ADF24B11FF20077AEB7 /* DelegateFlowLayout.swift in Sources */,
 				25430ACD24B1066B0077AEB7 /* ActionPlanTVC.swift in Sources */,
